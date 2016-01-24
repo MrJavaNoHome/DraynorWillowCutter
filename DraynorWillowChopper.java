@@ -1,4 +1,4 @@
-package scripts;
+package scripts.DraynorWillowCutter.DraynorWillowCutter;
 
 import org.powerbot.script.PollingScript;
 import org.powerbot.script.Script;
@@ -7,20 +7,15 @@ import org.powerbot.script.rt4.ClientContext;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
-import java.lang.String;
 
 /**
  * Tutorial used:
  * http://www.powerbot.org/community/topic/1182786-the-rsbot-cookbook-writing-your-first-script-using-tasks/
  */
-//TODO check if being attacked by dark wizard ( miss click )
-//poprawa queries
 @Script.Manifest(
         name = "GramNaPsp's Draynor Willow Chopper", properties = "author=GramNaPsp; topic=-1; client=4;",
         description = "Cut willow trees in Draynor Village."
 )
-
-
 public class DraynorWillowChopper extends PollingScript<ClientContext> {
     private List<Task> taskList = new ArrayList<Task>();
 

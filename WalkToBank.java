@@ -1,11 +1,10 @@
-package scripts;
+package scripts.DraynorWillowCutter.DraynorWillowCutter;
 
 import org.powerbot.script.rt4.ClientContext;
 import org.powerbot.script.rt4.GameObject;
 import org.powerbot.script.Tile;
 
 public class WalkToBank extends Task<ClientContext> {
-    private static final int willowLogId = 1519;
     private static final int[] bankBoothIds = { 6943,6946 };
     public static final Tile bankTile = new Tile(3092, 3245, 0);
 
@@ -23,7 +22,7 @@ public class WalkToBank extends Task<ClientContext> {
 
     @Override
     public void execute(){
-            System.out.println("Ide do banku");
+            System.out.println("Going to bank.");
             ctx.movement.step(bankTile);
             ctx.camera.turnTo(bankTile);
     }

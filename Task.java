@@ -1,4 +1,4 @@
-package scripts;
+package scripts.DraynorWillowCutter.DraynorWillowCutter;
 import org.powerbot.script.rt4.ClientAccessor;
 import org.powerbot.script.rt4.ClientContext;
 
